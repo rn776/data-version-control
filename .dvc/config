@@ -1,4 +1,7 @@
 [core]
     remote = remote_storage
+[cache]
+    dir = /home/rnath/shared_cache
+    type = symlink
 ['remote "remote_storage"']
     url = /home/rnath/dvc_remote
