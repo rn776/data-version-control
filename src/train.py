@@ -6,6 +6,7 @@ import pandas as pd
 from skimage.io import imread_collection
 from skimage.transform import resize
 from sklearn.ensemble import RandomForestClassifier
+import mlflow.sklearn
 
 
 def load_images(data_frame, column_name):
