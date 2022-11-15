@@ -7,8 +7,9 @@ from skimage.io import imread_collection
 from skimage.transform import resize
 from sklearn.ensemble import RandomForestClassifier
 import mlflow.sklearn
+import dvc.api
 
-
+data_path = ""
 def load_images(data_frame, column_name):
     filelist = data_frame[column_name].to_list()
     image_list = imread_collection(filelist)
